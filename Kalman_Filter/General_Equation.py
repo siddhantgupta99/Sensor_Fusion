@@ -25,4 +25,19 @@ def predict(mean1, var1, mean2, var2):
 
 print (predict(10., 4., 12., 4.))
 
+''' Time to test the code '''
 
+measurements = [5., 6., 7., 9., 10.]
+motion = [1., 1., 2., 1., 1.]
+measurement_sig = 4.
+motion_sig = 2.
+mu = 0.
+sig = 10000.
+
+for i,j in zip(measurements,motion):
+# mu and sig are the inputs as well as the outputs for both equations
+    [mu,sig] = update(mu,sig,i,measurement_sig)
+    print ('Update : ',[mu,sig])
+
+    [mu,sig] = predict(mu,sig,j,motion_sig)
+    print ('Predict : ',[mu,sig])
