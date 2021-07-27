@@ -8,6 +8,14 @@ def f(mu, sigma2, x):
 
 print (f(10.,4.,10.))
 
+
+def update(mean1, var1, mean2, var2):
+    new_mean = (mean1*var2+mean2*var1)/(var1 + var2)
+    new_var = 1/(1/var1 + 1/var2)
+    return [new_mean,new_var]
+
+print (update(10.,4.,12., 4.))
+
 # In order to maximize the output of the gaussian function the value of x should be set to mu.
 
 
