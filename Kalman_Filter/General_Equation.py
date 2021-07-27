@@ -9,6 +9,7 @@ def f(mu, sigma2, x):
 print (f(10.,4.,10.))
 
 
+# Update function takes two inputs which are prior and the measurement and outputs the posterior
 def update(mean1, var1, mean2, var2):
     new_mean = (mean1*var2+mean2*var1)/(var1 + var2)
     new_var = 1/(1/var1 + 1/var2)
