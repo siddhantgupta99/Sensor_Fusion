@@ -152,6 +152,7 @@ def kalman_filter(x, P):
         S = H * P * H.transpose() + R
         K = P * H.transpose() * S.inverse()
         x = x + (K * y)
+        print("Size" , x)
         P = (I - (K * H)) * P
         print("Measurement Update-> x:", x, " P:", P )
         # prediction
