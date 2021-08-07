@@ -1,0 +1,3 @@
+/Users/siddhantgupta/Desktop/Udacity Sensor Fusion/Camera/SFND_Camera/Lesson 4 - Tracking Image Features/Gradient-based vs. Binary Descriptors/describe_keypoints/build/CMakeFiles/rebuild_cache.dir
+/Users/siddhantgupta/Desktop/Udacity Sensor Fusion/Camera/SFND_Camera/Lesson 4 - Tracking Image Features/Gradient-based vs. Binary Descriptors/describe_keypoints/build/CMakeFiles/edit_cache.dir
+/Users/siddhantgupta/Desktop/Udacity Sensor Fusion/Camera/SFND_Camera/Lesson 4 - Tracking Image Features/Gradient-based vs. Binary Descriptors/describe_keypoints/build/CMakeFiles/describe_keypoints.dir
