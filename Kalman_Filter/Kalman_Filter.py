@@ -150,13 +150,13 @@ def kalman_filter(x, P):
         Z = matrix([[measurements[n]]])
         y = Z - (H * x)
         S = H * P * H.transpose() + R
-        K = P * H.transpose() * S.inverse()
+        K = P * H.transpose() * S.inverse() # Gain matrix update
         x = x + (K * y)
         print("Size" , x)
         P = (I - (K * H)) * P
         print("Measurement Update-> x:", x, " P:", P )
+        
         # prediction
-
         x = F * x + u
         P = F * P * F.transpose()
         print("Prediction-> x:", x, " P : ", P,"\n")
@@ -167,7 +167,7 @@ def kalman_filter(x, P):
 ### use the code below to test your filter!
 ############################################
 
-measurements = [1, 2, 3]
+measurements = [3, 3, 4]
 
 x = matrix([[0.], [0.]]) # initial state (location and velocity)
 P = matrix([[1000., 0.], [0., 1000.]]) # initial uncertainty
