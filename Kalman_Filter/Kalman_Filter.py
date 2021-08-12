@@ -167,7 +167,7 @@ def kalman_filter(x, P):
 ### use the code below to test your filter!
 ############################################
 
-measurements = [3, 3, 4]
+measurements = [1, 2, 3]
 
 x = matrix([[0.], [0.]]) # initial state (location and velocity)
 P = matrix([[1000., 0.], [0., 1000.]]) # initial uncertainty
