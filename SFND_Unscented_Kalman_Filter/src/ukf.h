@@ -57,6 +57,18 @@ class UKF {
   // state covariance matrix
   Eigen::MatrixXd P_;
 
+    // state transistion matrix
+  Eigen::MatrixXd F_;
+
+  // process covariance matrix
+  Eigen::MatrixXd Q_;
+
+  // measurement matrix
+  Eigen::MatrixXd H_;
+
+  // measurement covariance matrix
+  Eigen::MatrixXd R_;
+
   // predicted sigma points matrix
   Eigen::MatrixXd Xsig_pred_;
 
